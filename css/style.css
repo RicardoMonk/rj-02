@@ -1,0 +1,1087 @@
+:root{
+    --primarycolor: #F4D684;
+    --secundarycolor: #4A4B80;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+    /* background-color: var(--primarycolor); */
+    width: 100%;
+    min-width: 375px;
+    /* height: 100vh; */
+    height: auto;
+    overflow: hidden;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+/* style navigation blok */
+header{
+    width: 40%;
+    height: 100vh;
+    min-height: 600px;
+    /* border: red solid 1px; */
+    background-color: var(--primarycolor);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+nav{
+    width: 100%;
+    height: 60%;
+    /* border: var(--secundarycolor) solid 1px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav .logo{
+    width: 30rem;
+}
+
+.list-item{
+    font-weight:100;
+    list-style: none;
+    color: var(--secundarycolor);
+    margin: .8rem auto;
+}
+
+ul{
+    width: 20rem;
+    height: auto;
+    /* border: var(--secundarycolor) solid 1px; */
+    text-align: center;
+}
+
+.active{
+    font-weight: 700
+}
+
+ul li{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    /* transition-duration: 0.8s; */
+}
+
+/* nav ul li:hover{
+    
+    font-weight: 700;
+} */
+
+nav ul .second-item{
+    border-top: var(--secundarycolor) solid 1px;
+    border-bottom: var(--secundarycolor) solid 1px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: var(--secundarycolor);
+}
+
+.vid-anim{
+    width: 100%;
+    height: 100%;
+    border: var(--secundarycolor) solid 1px;
+}
+
+/* style navigation blok */
+
+/* style text description */
+
+.main-cont{
+    width: 60%;
+    height: auto;
+    min-height: 600px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    background-color: var(--secundarycolor);
+}
+
+.main-cont article{
+    width: 100%;
+    height: 45%;
+    /* border: tomato solid 1px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont-text{
+    color: var(--primarycolor);
+    width: 90%;
+    height: 10rem;
+    /* border: tomato solid 1px; */
+}
+
+.cont-text h1{
+    margin-bottom: 1rem;
+}
+
+.main-cont-img{
+    width: 100%;
+    height: 65%;
+    /* border: tomato solid 1px; */
+    overflow: hidden;
+}
+
+.main-cont-img img{
+    width: 115%;
+    min-width: 75rem;
+    height: auto;
+    position: relative;
+    top: -10rem;
+}
+
+section#catalogo, section#contacto{
+    visibility: hidden;
+}
+
+.second-cont{
+    position: absolute;
+    z-index: auto;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 60%;
+    height: 100vh;
+    min-height: 600px;
+    background-color: var(--secundarycolor);
+}
+
+.second-cont-img{
+    width: 100%;
+    height: 55%;
+    /* border: tomato solid 1px; */
+    overflow: hidden;
+}
+
+.second-cont-img img{
+    width: 150%;
+    height: auto;
+    position: relative;
+    right: 8rem;
+}
+
+.second-cont article{
+    width: 100%;
+    height: 30%;
+    /* border: tomato solid 1px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.second-cont-text{
+    color: var(--primarycolor);
+    width: 90%;
+    height: auto;
+    /* border: tomato solid 1px; */
+}
+
+.second-cont-text h2{
+    margin-bottom: 1rem;
+}
+
+.cont-butt{
+    margin: 1rem auto;
+    width: 90%;
+    height: 10rem;
+    /* border: tomato solid 1px; */
+}
+
+.cont-butt a{
+    padding: 2rem 6rem;
+    width: 20rem;
+    height: 5rem;
+    border-radius: 20px;
+    font-size: 1.8rem;
+    background-color: var(--primarycolor);
+    color: var(--secundarycolor);
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    transition-duration: 0.4s;
+}
+
+.cont-butt a:hover{
+    background-color: #f3dda0;
+    box-shadow: 0 10px 10px #363764;
+}
+
+.third-cont{
+    position: absolute;
+    z-index: auto;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 60%;
+    height: 100vh;
+    min-height: 600px;
+    background-color: var(--secundarycolor);
+}
+
+.third-cont-img{
+    width: 100%;
+    height: 20%;
+    /* border: tomato solid 1px; */
+    overflow: hidden;
+}
+
+.third-cont-img img{
+    width: 150%;
+    height: auto;
+    position: relative;
+    top: -28rem;
+    left: -2rem;
+}
+
+.third-cont article{
+    width: 100%;
+    height: 20%;
+    /* border: tomato solid 1px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--secundarycolor);
+    background-color: var(--primarycolor);
+}
+
+.third-cont-text{
+    width: 90%;
+    height: auto;
+    /* border: tomato solid 1px; */
+}
+
+.third-cont-text h3{
+    margin-bottom: 1rem;
+}
+
+.form-anim{
+    width: 100%;
+    height: 60%;
+    /* border: green solid 1px; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+form{
+    height: auto;
+}
+
+.form{
+    width: 120%;
+    /* border: tomato solid 1px; */
+    margin-left: 2rem;
+}
+
+form .grupo{
+    position: relative;
+    margin: 20px;
+
+}
+
+input{
+    background: none;
+    color: #fdedc1;
+    font-size: 2rem;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--primarycolor);
+}
+
+input:focus{
+    outline: none;
+    color: var(--primarycolor);
+}
+
+label{
+    color: var(--primarycolor);
+    font-size: 16px;
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    transition: 0.4s ease all;
+    pointer-events: none;
+}
+
+input:focus~label,
+input:valid~label{
+    top: -14px;
+    font-size: 12px;
+    color: var(--primarycolor);
+}
+
+.barra{
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+/* 
+
+con este estilo logramos que aldar click en el campo de texto se estire una linea de color
+
+.barra::before{
+    content: "";
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    position: absolute;
+    background: var(--primarycolor);
+    transition: 0.3s ease width;
+    left: 0;
+} */
+
+
+input:focus~.barra::before{
+    width: 100%;
+}
+
+.enviar{
+    background: var(--primarycolor);
+    color: var(--secundarycolor);
+    border: none;
+    display: block;
+    width: 90%;
+    margin: 10px auto;
+    height: 4rem;
+    font-size: 1.6rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.third-anim{
+    width: 40%;
+    height: 100%;
+    border: tomato solid 1px;
+}
+
+@media (max-width:768px) {
+
+    body{
+        font-size: 1.6rem;
+        font-family: Arial, Helvetica, sans-serif;
+        /* background-color: var(--primarycolor); */
+        width: 100%;
+        min-width: 375px;
+        /* height: 100vh; */
+        height: auto;
+        overflow: hidden;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    
+    /* style navigation blok */
+    header{
+        width: 100%;
+        height: auto;
+        min-height: 20rem;
+        /* border: red solid 1px; */
+        background-color: var(--primarycolor);
+        display: flex;
+        flex-wrap: wrap;
+        /* align-items: center; */
+    }
+    
+    nav{
+        width: 50%;
+        height: 25rem;
+        /* border: var(--secundarycolor) solid 1px; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    nav .logo{
+        width: 15rem;
+    }
+    
+    .list-item{
+        font-weight:100;
+        list-style: none;
+        color: var(--secundarycolor);
+        margin: .8rem auto;
+    }
+    
+    ul{
+        width: 20rem;
+        height: auto;
+        /* border: var(--secundarycolor) solid 1px; */
+        text-align: center;
+    }
+    
+    .active{
+        font-weight: 700
+    }
+    
+    ul li{
+        padding-top: 8px;
+        padding-bottom: 8px;
+        /* transition-duration: 0.8s; */
+    }
+    
+    nav ul .second-item{
+        border-top: var(--secundarycolor) solid 1px;
+        border-bottom: var(--secundarycolor) solid 1px;
+    }
+    
+    ul li a{
+        text-decoration: none;
+        color: var(--secundarycolor);
+    }
+    
+    .vid-anim{
+        width: 50%;
+        height: 25rem;
+        border: var(--secundarycolor) solid 1px;
+    }
+
+    .main-cont{
+        width: 100%;
+        height: 30%;
+        min-height: 600px;
+        position: absolute;
+        
+        top: 25rem;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        background-color: var(--secundarycolor);
+    }
+    
+    .main-cont article{
+        width: 100%;
+        height: 30%;
+        /* border: tomato solid 1px; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .cont-text{
+        color: var(--primarycolor);
+        width: 90%;
+        height: 10rem;
+        /* border: tomato solid 1px; */
+    }
+    
+    .cont-text h1{
+        margin-bottom: 1rem;
+    }
+    
+    .main-cont-img{
+        width: 100%;
+        height: 65%;
+        /* border: tomato solid 1px; */
+        overflow: hidden;
+    }
+    
+    .main-cont-img img{
+        width: 115%;
+        min-width: 63rem;
+        height: auto;
+        position: relative;
+        top: -10rem;
+    }
+    
+    section#catalogo, section#contacto{
+        visibility: hidden;
+    }
+    
+    .second-cont{
+        position: absolute;
+        z-index: auto;
+        top: 25rem;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 10vh;
+        min-height: 600px;
+        background-color: var(--secundarycolor);
+    }
+    
+    .second-cont-img{
+        width: 100%;
+        height: 20%;
+        /* border: tomato solid 1px; */
+        overflow: hidden;
+    }
+    
+    .second-cont-img img{
+        width: 150%;
+        height: auto;
+        position: relative;
+        right: 8rem;
+        top: -30rem;
+    }
+    
+    .second-cont article{
+        width: 100%;
+        height: 25%;
+        /* border: tomato solid 1px; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .second-cont-text{
+        color: var(--primarycolor);
+        width: 90%;
+        height: auto;
+        /* border: tomato solid 1px; */
+    }
+    
+    .second-cont-text h2{
+        margin-bottom: 1rem;
+    }
+    
+    .cont-butt{
+        margin: 1rem auto;
+        width: 90%;
+        height: 10rem;
+        /* border: tomato solid 1px; */
+    }
+    
+    .cont-butt a{
+        padding: 2rem 6rem;
+        width: 20rem;
+        height: 5rem;
+        border-radius: 20px;
+        font-size: 1.8rem;
+        background-color: var(--primarycolor);
+        color: var(--secundarycolor);
+        border: none;
+        cursor: pointer;
+        text-decoration: none;
+        transition-duration: 0.4s;
+    }
+    
+    .cont-butt a:hover{
+        background-color: #f3dda0;
+        box-shadow: 0 10px 10px #363764;
+    }
+    
+    .third-cont{
+        display: flex;
+        flex-direction: row;
+        
+        position: absolute;
+        z-index: auto;
+        top: 25rem;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 30vh;
+        min-height: 600px;
+        background-color: var(--secundarycolor);
+    }
+    
+    .third-cont-img{
+        display: none;
+    }
+    
+    .third-cont article{
+        width: 40%;
+        height: 70%;
+        /* border: tomato solid 1px; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--primarycolor);
+        background-color: var(--secundarycolor);
+    }
+    
+    .third-cont-text{
+        width: 90%;
+        height: auto;
+        /* border: tomato solid 1px; */
+    }
+    
+    .third-cont-text h3{
+        margin-bottom: 1rem;
+    }
+    
+    .form-anim{
+        width: 60%;
+        height: 65%;
+        /* border: tomato solid 1px; */
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    form{
+        height: auto;
+    }
+    
+    .form{
+        width: 120%;
+        /* border: tomato solid 1px; */
+        margin-left: 2rem;
+    }
+    
+    form .grupo{
+        position: relative;
+        margin: 20px;
+    
+    }
+    
+    input{
+        background: none;
+        color:black;
+        font-size: 2rem;
+        padding: 10px 10px 10px 5px;
+        display: block;
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid var(--primarycolor);
+    }
+    
+    input:focus{
+        outline: none;
+        color: #808080;
+    }
+    
+    label{
+        color: var(--primarycolor);
+        font-size: 16px;
+        position: absolute;
+        left: 5px;
+        top: 10px;
+        transition: 0.4s ease all;
+        pointer-events: none;
+    }
+    
+    input:focus~label,
+    input:valid~label{
+        top: -14px;
+        font-size: 12px;
+        color: var(--primarycolor);
+    }
+    
+    .barra{
+        position: relative;
+        display: block;
+        width: 100%;
+    }
+    
+    /* 
+    
+    con este estilo logramos que aldar click en el campo de texto se estire una linea de color
+    
+    .barra::before{
+        content: "";
+        width: 0%;
+        height: 2px;
+        bottom: 0;
+        position: absolute;
+        background: var(--primarycolor);
+        transition: 0.3s ease width;
+        left: 0;
+    } */
+    
+    
+    input:focus~.barra::before{
+        width: 100%;
+    }
+    
+    .enviar{
+        background: var(--primarycolor);
+        color: var(--secundarycolor);
+        border: none;
+        display: block;
+        width: 90%;
+        margin: 10px auto;
+        height: 4rem;
+        font-size: 1.6rem;
+        border-radius: 1rem;
+        cursor: pointer;
+    }
+    
+    .third-anim{
+        display: none;
+    }
+}
+
+@media (max-width:375px) {
+    body{
+        font-size: 1.6rem;
+        font-family: Arial, Helvetica, sans-serif;
+        /* background-color: var(--primarycolor); */
+        width: 100%;
+        min-width: 375px;
+        /* height: 100vh; */
+        height: auto;
+        overflow: hidden;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    
+    /* style navigation blok */
+    header{
+        width: 100%;
+        height: auto;
+        min-height: 20rem;
+        /* border: red solid 1px; */
+        background-color: var(--primarycolor);
+        display: flex;
+        flex-wrap: wrap;
+        /* align-items: center; */
+    }
+    
+    nav{
+        width: 50%;
+        height: 25rem;
+        /* border: var(--secundarycolor) solid 1px; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    nav .logo{
+        width: 15rem;
+    }
+    
+    .list-item{
+        font-weight:100;
+        list-style: none;
+        color: var(--secundarycolor);
+        margin: .8rem auto;
+    }
+    
+    ul{
+        width: 15rem;
+        height: auto;
+        /* border: var(--secundarycolor) solid 1px; */
+        text-align: center;
+    }
+    
+    .active{
+        font-weight: 700
+    }
+    
+    ul li{
+        padding-top: 8px;
+        padding-bottom: 8px;
+        /* transition-duration: 0.8s; */
+    }
+    
+    nav ul .second-item{
+        border-top: var(--secundarycolor) solid 1px;
+        border-bottom: var(--secundarycolor) solid 1px;
+    }
+    
+    ul li a{
+        text-decoration: none;
+        color: var(--secundarycolor);
+    }
+    
+    .vid-anim{
+        width: 50%;
+        height: 25rem;
+        border: var(--secundarycolor) solid 1px;
+    }
+
+    .main-cont{
+        width: 100%;
+        height: 30%;
+        min-height: 600px;
+        position: absolute;
+        
+        top: 25rem;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        background-color: var(--secundarycolor);
+    }
+    
+    .main-cont article{
+        width: 100%;
+        height: 30%;
+        /* border: tomato solid 1px; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .cont-text{
+        text-align: center;
+        color: var(--primarycolor);
+        width: 90%;
+        height: 14rem;
+        /* border: tomato solid 1px; */
+    }
+    
+    .cont-text h1{
+        margin-bottom: 1rem;
+    }
+    
+    .main-cont-img{
+        width: 100%;
+        height: 65%;
+        /* border: tomato solid 1px; */
+        overflow: hidden;
+    }
+    
+    .main-cont-img img{
+        width: 115%;
+        height: auto;
+        position: relative;
+        top: -5rem;
+    }
+    
+    section#catalogo, section#contacto{
+        visibility: hidden;
+    }
+    
+    .second-cont{
+        position: absolute;
+        z-index: auto;
+        top: 25rem;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 10vh;
+        min-height: 600px;
+        background-color: var(--secundarycolor);
+    }
+    
+    .second-cont-img{
+        width: 100%;
+        height: 20%;
+        /* border: tomato solid 1px; */
+        overflow: hidden;
+    }
+    
+    .second-cont-img img{
+        width: 150%;
+        height: auto;
+        position: relative;
+        right: 8rem;
+        top: -19rem;
+    }
+    
+    .second-cont article{
+        width: 100%;
+        height: 30%;
+        text-align: center;
+        /* border: tomato solid 1px; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .second-cont-text{
+        color: var(--primarycolor);
+        width: 90%;
+        height: auto;
+        /* border: tomato solid 1px; */
+    }
+    
+    .second-cont-text h2{
+        margin-bottom: 1rem;
+    }
+    
+    .cont-butt{
+        margin: 1rem auto;
+        width: 90%;
+        height: auto;
+        /* border: tomato solid 1px; */
+        display: flex;
+        justify-content: center;
+    }
+    
+    .cont-butt a{
+        padding: 2rem 6rem;
+        width: 20rem;
+        height: 6rem;
+        border-radius: 20px;
+        font-size: 1.8rem;
+        background-color: var(--primarycolor);
+        color: var(--secundarycolor);
+        border: none;
+        cursor: pointer;
+        text-decoration: none;
+        transition-duration: 0.4s;
+    }
+    
+    .cont-butt a:hover{
+        background-color: #f3dda0;
+        box-shadow: 0 10px 10px #363764;
+    }
+    
+    .third-cont{
+        display: flex;
+        flex-direction: row;
+        
+        position: absolute;
+        z-index: auto;
+        top: 25rem;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 30vh;
+        min-height: 600px;
+        background-color: var(--secundarycolor);
+    }
+    
+    .third-cont-img{
+        display: none;
+    }
+    
+    .third-cont article{
+        width: 40%;
+        height: 70%;
+        /* border: tomato solid 1px; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--primarycolor);
+        background-color: var(--secundarycolor);
+    }
+    
+    .third-cont-text{
+        width: 90%;
+        height: auto;
+        /* border: tomato solid 1px; */
+    }
+    
+    .third-cont-text h3{
+        margin-bottom: 1rem;
+    }
+    
+    .form-anim{
+        width: 60%;
+        height: 65%;
+        /* border: tomato solid 1px; */
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    form{
+        height: auto;
+    }
+    
+    .form{
+        width: 80%;
+        /* border: tomato solid 1px; */
+        margin-left: 2rem;
+    }
+    
+    form .grupo{
+        position: relative;
+        margin: 20px;
+    
+    }
+    
+    input{
+        background: none;
+        color:black;
+        font-size: 2rem;
+        padding: 10px 10px 10px 5px;
+        display: block;
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid var(--primarycolor);
+    }
+    
+    input:focus{
+        outline: none;
+        color: #808080;
+    }
+    
+    label{
+        color: var(--primarycolor);
+        font-size: 16px;
+        position: absolute;
+        left: 5px;
+        top: 10px;
+        transition: 0.4s ease all;
+        pointer-events: none;
+    }
+    
+    input:focus~label,
+    input:valid~label{
+        top: -14px;
+        font-size: 12px;
+        color: var(--primarycolor);
+    }
+    
+    .barra{
+        position: relative;
+        display: block;
+        width: 100%;
+    }
+    
+    /* 
+    
+    con este estilo logramos que aldar click en el campo de texto se estire una linea de color
+    
+    .barra::before{
+        content: "";
+        width: 0%;
+        height: 2px;
+        bottom: 0;
+        position: absolute;
+        background: var(--primarycolor);
+        transition: 0.3s ease width;
+        left: 0;
+    } */
+    
+    
+    input:focus~.barra::before{
+        width: 100%;
+    }
+    
+    .enviar{
+        background: var(--primarycolor);
+        color: var(--secundarycolor);
+        border: none;
+        display: block;
+        width: 90%;
+        margin: 10px auto;
+        height: 4rem;
+        font-size: 1.6rem;
+        border-radius: 1rem;
+        cursor: pointer;
+    }
+    
+    .third-anim{
+        display: none;
+    }
+}

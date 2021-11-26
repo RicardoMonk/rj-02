@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="">
+
+    <title>RJ&V</title>
+
+    <!-- este jquery va a dar la funcion para navegar en un mismo lugar -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- este js es mi archivo principal de js -->
+    <script src="js/main.js"></script>
+
+</head>
+<body>
+
+    <header>
+        <nav>
+            <img src="imgs/RJ&V.svg" alt="RJ&V" class="logo">
+
+            <ul class="tabs">
+                <li class="list-item">
+                    <a href="#tab1">Sobre Nosotros</a>
+                </li>
+                
+                <li class="list-item second-item"><a href="#tab2">Catálogo</a>
+                </li>
+
+                <li class="list-item"><a href="#tab3">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="vid-anim">
+            <video src=""></video>
+        </div>
+    </header>
+
+    <section id="tab1" class="main-cont secciones"> 
+        <article>
+            <div class="cont-text">
+                <h1>RJ&V Distribution</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore adipisci ipsum facere et dolore distinctio, ea soluta maxime tempora odit quasi optio praesentium. Mollitia ipsa quibusdam ab non recusandae. Natus.</p>
+            </div>
+        </article>
+
+        <div class="main-cont-img">
+            <img src="imgs/4RJ&VProductos.png" alt="">
+        </div>
+    </section>
+
+    <section id="tab2" class="second-cont  secciones">  
+
+        <div class="second-cont-img">
+            <img src="imgs/2RJ&VProductos.png" alt="">
+        </div>
+        
+        <article>
+            <div class="second-cont-text">
+                <h2>Descarga Nuestro Catálogo</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore adipisci ipsum facere et dolore distinctio, ea soluta maxime tempora odit quasi optio praesentium. Mollitia ipsa quibusdam ab non recusandae. Natus.</p>
+            </div>
+        </article>
+
+        <div class="cont-butt">
+            <a href="imgs/RJ&V.svg" download="">Descargar</a>
+        </div>
+
+    </section>
+
+    <section id="tab3" class="third-cont  secciones">  
+
+        <div class="third-cont-img">
+            <img src="imgs/3RJ&VProductos.png" alt="">
+        </div>
+        
+        <article>
+            <div class="third-cont-text">
+                <h3>¿Necesitas Cotizar?</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore adipisci ipsum facere et dolore distinctio, ea soluta maxime tempora odit quasi optio praesentium. Mollitia ipsa quibusdam ab non recusandae. Natus.</p>
+            </div>
+        </article>
+
+        <div class="form-anim">
+
+            <!-- el action del form tiene una liga que funciona para para mandar el correo pero manda a otra página entonces dejar hasta encontrar otra forma -->
+            <form action="https://formsubmit.co/ricardodgcvisual@gmail.com" method="POST" id="form">
+
+                <div class="form">
+    
+                    <div class="grupo">
+                        <input type="text" name="name" id="name" required> <span class="barra"></span>
+                        <label for="">Nombre</label>
+                    </div>
+    
+                    <div class="grupo">
+                        <input type="text" name="empresa" id="name" required> <span class="barra"></span>
+                        <label for="">Empresa</label>
+                    </div>
+    
+                    <div class="grupo">
+                        <input type="number" name="phone" id="name" required> <span class="barra"></span>
+                        <label for="">Tel</label>
+                    </div>
+    
+                    <div class="grupo">
+                        <input type="email" name="mail" id="name" required> <span class="barra"></span>
+                        <label for="">Email</label>
+                    </div>
+    
+                    <div class="grupo">
+                        <input type="text" name="message" id="name" required> <span class="barra"></span>
+                        <label for="">Asunto</label>
+                    </div>
+    
+                    <button class="enviar" type="submit">Enviar</button>
+                    
+                </div>
+    
+            </form>
+
+            <div class="third-anim">
+                <video src=""></video>
+            </div>
+
+        </div>
+
+    </section>
+    
+</body>
+</html>
